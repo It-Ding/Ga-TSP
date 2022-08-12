@@ -15,12 +15,9 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWidget
-{
+class Ui_MainWidget {
 public:
-
-    void setupUi(QWidget *MainWidget)
-    {
+    void setupUi(QWidget *MainWidget) {
         if (MainWidget->objectName().isEmpty())
             MainWidget->setObjectName(QString::fromUtf8("MainWidget"));
         MainWidget->resize(800, 600);
@@ -30,15 +27,13 @@ public:
         QMetaObject::connectSlotsByName(MainWidget);
     } // setupUi
 
-    void retranslateUi(QWidget *MainWidget)
-    {
+    void retranslateUi(QWidget *MainWidget) {
         MainWidget->setWindowTitle(QCoreApplication::translate("MainWidget", "GATSP", nullptr));
     } // retranslateUi
-
 };
 
 namespace Ui {
-    class MainWidget: public Ui_MainWidget {};
+    class MainWidget : public Ui_MainWidget {};
 } // namespace Ui
 
 QT_END_NAMESPACE
